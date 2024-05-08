@@ -1,0 +1,65 @@
+body::div {
+    display: block;
+    visibility: hidden;
+  }
+.parent_div{
+    margin-left: 10px;
+    display: inline-block;
+}
+.parent_div>div{
+    border-radius: 25%;
+    display: inline-block;
+    width: 3px;
+    height: 5px;
+    background-color: yellowgreen;   
+}
+@keyframes c1d {
+    
+    0% {background-color:yellowgreen; height: 10px;}
+    /* 50% {background-color: rgb(15, 116, 23); height: 100px;} */
+    100% {background-color: blue; height: 20px;}
+}
+@keyframes c2d {
+   from{background-color: yellowgreen;height: 10px;}
+   to{background-color: blue;height: 15px;}
+}
+.c1d{
+    display: inline-block;
+    animation-name: c1d;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.c2d{
+    display: inline-block;
+    animation-name:c2d;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.c3d{
+    display: inline-block;
+    animation-name: c1d;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.c4d{
+    display: inline-block;
+    animation-name: c2d;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.c5d{
+    display: inline-block;
+    animation-name: c1d;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+audio:hover+div{
+    display: block;
+}
+audio:hover+div>div{
+    display: block;
+}

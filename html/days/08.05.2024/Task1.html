@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .landscape{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 2s;
+}
+.landscape:hover{
+    width: 200px;
+    /* transform: rotate(180deg); */
+    background-color: yellow;
+}
+.potrait{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 2s;
+}
+.potrait:hover{
+    /* width: 200px; */
+    transform: rotate(180deg);
+    background-color: yellow;
+}
+.both{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 2s;
+    margin-bottom: 20px;
+}
+.both:hover{
+    transform: rotate(360deg);
+    background-color: yellow;
+    width: 200px;
+}
+.both_with_animation{
+   
+    /* background-color: green; */
+    margin-top: 10x;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    animation-name: box;
+    animation-duration: 5s;
+    }
+    @keyframes box {
+        0%{background-color:red;width: 100px;}
+        50%{background-color: yellow;width: 200px; rotate: 360deg;}
+        /* 70%{background-color: rgb(200, 51, 113);width: 400px;} */
+    }
+    </style>
+</head>
+<body>
+    <div class="landscape">
+        
+    </div>
+    <br>
+    <div class="potrait">
+        
+    </div>
+    <br>
+    <div class="both">
+        
+    </div>
+    <div class="both_with_animation">
+        
+    </div>
+</body>
+</html>

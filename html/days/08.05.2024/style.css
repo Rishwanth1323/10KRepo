@@ -1,0 +1,15 @@
+.img{
+    height: 0px;
+    width: 0px;
+    animation: kf 10s;
+    animation-delay: 3s;
+    animation-timing-function: var(100s);
+    /* animation-fill-mode: forwards; */
+}
+@keyframes kf {
+   
+    100%{
+        height: 100px;
+        width: 100px;
+    }        
+}
