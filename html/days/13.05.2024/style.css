@@ -1,0 +1,25 @@
+.parentdiv{
+    display: inline-block;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 1000px;
+    flex-wrap: nowrap;
+    /* flex-flow: row; */
+    /* justify-content: center; */
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.parentdiv>div{
+    text-align: center;
+    margin: 10px;
+    background-color: aliceblue;
+    height: 80px;
+    width : 80px;
+}
+.div2{
+    flex-basis: 200px;
+    flex-shrink: 3;
+}
