@@ -1,0 +1,24 @@
+.nav{
+    width: 100vw;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    /* background-color: yellow; */
+    justify-content: center;
+    gap: 200px;
+}
+.items{
+    
+    text-align:center;
+    height: 20px;
+    width: 100px;
+    color: white;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color:white
+}
+a[text-decoration]{
+    border: 5px solid yellow;
+}
