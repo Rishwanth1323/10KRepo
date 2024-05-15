@@ -1,0 +1,75 @@
+h1{
+    /* padding: 10px 500px; */
+    font-style: oblique;
+    font-size: 4em;
+    text-align: center;
+    color: red;
+    text-decoration:line-through dashed rgb(181, 181, 235) 2px;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition-duration: 2s;
+}
+.childdiv:hover{
+    box-shadow: 2px 2px 80px rgb(88, 143, 161);
+}
+.childdiv{
+    margin: 10px;
+    display: inline-block;
+    
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.childdiv img{
+    height: 250px;
+    width: 200px;
+    padding: 0%;
+    margin: 0%;
+    transition-duration: 2s;
+}
+.childdiv img:hover{
+    transform: scale(1.1,1.1);
+    padding: 0%;
+    margin: 0%;
+}
+.childdiv h1{
+    text-decoration:none;
+    padding: 0%;
+    margin: 0%;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+.childdiv p{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+button{
+    padding: 10px 40px;
+    background-color: rgb(99, 160, 180);
+    color: white;
+    
+}
+button:hover{
+    animation-duration: 2s;
+    animation-name: btn;
+}
+@keyframes btn{
+    0%{
+        transform: scale(1);
+        background-color: brown;
+    }
+    50%{
+        transform: scale(1.1);
+        background-color: red;
+    }
+   
+}
