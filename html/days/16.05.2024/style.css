@@ -1,0 +1,9 @@
+img{
+    width: 600px;
+    height:400px
+}
+@media screen and (max-width : 450px){
+    img{
+        width:300px
+    }
+}

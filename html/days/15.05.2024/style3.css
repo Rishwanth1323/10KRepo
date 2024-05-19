@@ -1,0 +1,30 @@
+img{
+    height: 250px;
+    width: 200px;
+    padding-left: 95px;
+}
+img:hover{
+    transform: scale(0.8,0.8);
+}
+.parentdiv{
+    display: grid;
+    grid-template-columns: repeat(3,400px) ;
+    justify-content: center;
+    gap:15px
+}
+.childdiv{
+    display: grid;
+    grid-template-rows: 250px 50px 200px 50px;
+    text-align: center;
+}
+.childdiv:hover{
+    box-shadow: 2px 5px 20px lightblue;
+}
+button{
+    background-color: white;
+    margin-left: 100px;
+    width: 200px;
+    height: 50px;
+    /* border: none ; Removes the border */
+    /* outline: none; Removes the outline (often used for focus) */
+}
