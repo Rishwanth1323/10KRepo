@@ -32,6 +32,12 @@ body{
 @media screen and (max-width:600px){
     .navbar{
         flex-direction: column;
+        width: 7010px;
+        /* position: none; */
+        height: 200px;
+        align-items:start;
+        /* float:inherit; */
+        /* justify-content: center; */
         /* position: fixed; */
     }
 }
@@ -154,7 +160,7 @@ body{
     padding-bottom: 100px;
     /* flex-wrap: wrap; */
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:714px){
     .places{
         flex-direction: column;
     }
@@ -229,7 +235,10 @@ body{
     }
     .lastimg{
         margin-bottom: 50px;
+        height: 100%;
+        width: 100%;
     }
+
 footer a{
     color : rgb(163, 149, 149);
 }

@@ -1,3 +1,6 @@
+p{
+    line-height: 1.5;
+}
 .page1{
     position: relative;
     /* display: inline-block; */
@@ -15,17 +18,34 @@
     padding: 12px 20px;
 }
 
-.page1 .page1child{
+.page1child{
+    display: inline-block;
     padding: 25px;
     position: absolute;
     background-color: white;
     top: 20%;
     left: 25%;
     height: 350px;
-    width: 300px;
+    width: 350px;
 }
 .page1child h1{
     color: lightgreen;
+}
+@media screen and (max-width:600px){
+    .title{
+        justify-content: center;
+    }
+    .page1{
+        height: 210vh;
+    }
+    .page1child{
+        /* float: left; */
+        margin-right: 35%;
+        /* padding-left: 0%; */
+        margin-left: 0%;
+        height: auto;
+        width: auto;
+    }
 }
 button{
     font-size: larger;
@@ -43,12 +63,13 @@ button{
     background-size: 100% 100%;
     background-image: url(./Images/bg-02.jpg);
 }
-.page2 .page2child{
+.page2child{
     /* background-color: aqua; */
     padding: 100px 20px;
     position: absolute;
-    background-color: white;
-    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* opacity: 0.6; */
+    /* /background-color: red; */
     right: 18%;
     height: 100vh;
     width: 450px;
@@ -66,21 +87,35 @@ button{
     font-size: 60px;
     justify-self:center;
     align-self:center;
+    background-color: rgba(255, 255, 255,0);
+    
+}
+@media screen and (max-width:600px){
+    .page2{
+        height: 210vh;
+    }
+    .page2child{
+        width: auto;
+        height: auto;
+        margin-left: 20%;
+    }
+
 }
 .page4{
     position: relative;
-    /* display: inline-block; */
+    display: inline-block;
     height: 110vh;
     width: 100vw;
     background-size: 100% 100%;
     background-image: url(./Images/bg-04.jpg);
 }
-.page4 .page4child{
+.page4child{
     /* background-color: aqua; */
+    display: inline-block;
     padding: 100px 20px;
     position: absolute;
-    background-color: white;
-    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.6); 
+    /* opacity: 0.8; */
     left: 18%;
     height: 100vh;
     width: 450px;
@@ -89,11 +124,10 @@ button{
     color: red;
     font-size: 2.2em;
 }
-p{
-    line-height: 1.5;
-}
+
 .page4child .page4flex{
     display: flex;
+    /* width: 100px; */
     flex-direction: column;
     gap: 10px;
 }
@@ -108,6 +142,18 @@ p{
 .page4child button{
     margin-top: 15px;
 }
+@media screen and (max-width:600px){
+    .page4{
+        height: 200vh;
+    }
+    .page4child{
+        height: auto;
+        width: auto;
+        margin-right: 50%;
+    }
+}
+
+
 .page3{
     position: relative;
     /* display: inline-block; */
@@ -116,13 +162,13 @@ p{
     background-size: 100% 100%;
     background-image: url(./Images/bg-03.jpg);
 }
-.page3 .page3flex{
+.page3flex{
     display: flex;
     flex-direction: column;
     position: absolute;
     gap: 15px;
     top: 12%;
-    left: 20%;
+    left: 25%;
 }
 .page3flex h1{
     color: rgb(75, 73, 73);
@@ -154,11 +200,28 @@ img{
 @media screen and (max-width:600px){
     .pics{
         /* display: grid; */
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         /* gap: 10px; */
     }
     .titles{
         flex-direction: column;
         gap: 10px;
+        width: 100px;
     }
+
+    .page3{
+        height: 300vh;
+        
+    }
+    
+}
+@media screen and (min-width:600px) and (max-width:1020px){
+    .pics{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .page3{
+        height: 200vh;
+        
+    }
+
 }
